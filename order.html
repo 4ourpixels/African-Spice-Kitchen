@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Order - African Spice Kitchen</title>
+    <title>Place Your Order - African Spice Kitchen</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -114,14 +114,15 @@
               alt="African Spice Kitchen"
             />
             <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
-              Order
+              Place Your Order
             </p>
           </div>
         </div>
       </div>
     </section>
-    <h1>Place Your Order</h1>
-    <div id="root"></div>
+    <div class="container">
+      <div id="root"></div>
+    </div>
 
     <script>
       // Step 1: Fetch the JSON data
@@ -137,11 +138,19 @@
             const productContainer = document.createElement("div");
             productContainer.classList.add("product");
 
+            const thumbnailElement = document.createElement("img");
+            thumbnailElement.src = thumbnail;
+            thumbnailElement.height = 250;
+            thumbnailElement.style.objectFit = "cover";
+            thumbnailElement.classList = "mt-5";
+            productContainer.appendChild(thumbnailElement);
+
             const nameElement = document.createElement("h3");
             nameElement.textContent = name;
+            nameElement.className = "mt-3";
             productContainer.appendChild(nameElement);
 
-            const priceElement = document.createElement("p");
+            const priceElement = document.createElement("h5");
             priceElement.textContent = `Price: $${price}`;
             productContainer.appendChild(priceElement);
 
@@ -149,16 +158,18 @@
             servedElement.textContent = served;
             productContainer.appendChild(servedElement);
 
-            const thumbnailElement = document.createElement("img");
-            thumbnailElement.src = thumbnail;
-            thumbnailElement.height = 300;
-            thumbnailElement.style.objectFit = "cover";
-            productContainer.appendChild(thumbnailElement);
-
             const cartBtnElement = document.createElement("button");
             cartBtnElement.innerText = "Add to Cart";
             cartBtnElement.className = "btn";
-            cartBtnElement.className = "btn-secondary";
+            cartBtnElement.className = "row";
+            cartBtnElement.className = "";
+            cartBtnElement.className = "mb-4";
+            cartBtnElement.style.backgroundColor = "#fe820e";
+            cartBtnElement.style.border = "none";
+            cartBtnElement.style.borderRadius = "4px";
+            cartBtnElement.style.paddingLeft = "1rem";
+            cartBtnElement.style.paddingRight = "1rem";
+            cartBtnElement.style.cursor = "pointer";
             productContainer.appendChild(cartBtnElement);
 
             rootContainer.appendChild(productContainer);
@@ -223,7 +234,6 @@
               alt="African Spice Kitchen"
             />
             <br />
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear());
