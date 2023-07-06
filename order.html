@@ -30,10 +30,8 @@
         .then((products) => {
           // Step 2: Access product information
           products.forEach((product) => {
-            const name = product.name;
-            const price = product.price;
-            const served = product.served;
-            const thumbnail = product.thumbnail;
+            // Destructure the product object
+            const { name, price, served, thumbnail } = product;
 
             // Step 3: Create HTML elements dynamically
             const productContainer = document.createElement("div");
@@ -53,10 +51,14 @@
 
             const thumbnailElement = document.createElement("img");
             thumbnailElement.src = thumbnail;
-            thumbnailElement.style = 300;
-            thumbnailElement.width = auto;
+            thumbnailElement.height = 300;
             thumbnailElement.style.objectFit = "cover";
             productContainer.appendChild(thumbnailElement);
+
+            const cartBtnElement = document.createElement("button");
+            cartBtnElement.innerText = "Cart";
+            cartBtnElement.className = "btn btn-secondary";
+            productContainer.appendChild(cartBtnElement);
 
             // Step 4: Append HTML elements to the root container
             const rootContainer = document.getElementById("root");
