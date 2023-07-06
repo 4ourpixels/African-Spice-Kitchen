@@ -33,6 +33,7 @@
             const name = product.name;
             const price = product.price;
             const served = product.served;
+            const thumbnail = product.thumbnail;
 
             // Step 3: Create HTML elements dynamically
             const productContainer = document.createElement("div");
@@ -49,6 +50,13 @@
             const servedElement = document.createElement("p");
             servedElement.textContent = served;
             productContainer.appendChild(servedElement);
+
+            const thumbnailElement = document.createElement("img");
+            thumbnailElement.src = thumbnail;
+            thumbnailElement.style = 300;
+            thumbnailElement.width = auto;
+            thumbnailElement.style.objectFit = "cover";
+            productContainer.appendChild(thumbnailElement);
 
             // Step 4: Append HTML elements to the root container
             const rootContainer = document.getElementById("root");
