@@ -23,50 +23,6 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="./css/style.css" />
-    <script>
-      // Step 1: Fetch the JSON data
-      fetch("./products.json")
-        .then((response) => response.json())
-        .then((products) => {
-          // Step 2: Access product information
-          products.forEach((product) => {
-            // Destructure the product object
-            const { name, price, served, thumbnail } = product;
-
-            // Step 3: Create HTML elements dynamically
-            const productContainer = document.createElement("div");
-            productContainer.classList.add("product");
-
-            const nameElement = document.createElement("h3");
-            nameElement.textContent = name;
-            productContainer.appendChild(nameElement);
-
-            const priceElement = document.createElement("p");
-            priceElement.textContent = `Price: $${price}`;
-            productContainer.appendChild(priceElement);
-
-            const servedElement = document.createElement("p");
-            servedElement.textContent = served;
-            productContainer.appendChild(servedElement);
-
-            const thumbnailElement = document.createElement("img");
-            thumbnailElement.src = thumbnail;
-            thumbnailElement.height = 300;
-            thumbnailElement.style.objectFit = "cover";
-            productContainer.appendChild(thumbnailElement);
-
-            const cartBtnElement = document.createElement("button");
-            cartBtnElement.innerText = "Cart";
-            cartBtnElement.className = "btn btn-secondary";
-            productContainer.appendChild(cartBtnElement);
-
-            // Step 4: Append HTML elements to the root container
-            const rootContainer = document.getElementById("root");
-            rootContainer.appendChild(productContainer);
-          });
-        })
-        .catch((error) => console.error(error));
-    </script>
   </head>
   <body>
     <header class="site-header">
@@ -162,13 +118,54 @@
             </p>
           </div>
         </div>
-        <a href="#" class="scroll-down">Scroll Down</a>
       </div>
     </section>
-    <!-- END section -->
-    <div class="container p-5">
-      <div id="root"></div>
-    </div>
+    <h1>Place Your Order</h1>
+    <div id="root"></div>
+
+    <script>
+      // Step 1: Fetch the JSON data
+      fetch("./products.json")
+        .then((response) => response.json())
+        .then((products) => {
+          // Step 2: Create HTML elements dynamically
+          const rootContainer = document.getElementById("root");
+
+          products.forEach((product) => {
+            const { name, price, served, thumbnail } = product;
+
+            const productContainer = document.createElement("div");
+            productContainer.classList.add("product");
+
+            const nameElement = document.createElement("h3");
+            nameElement.textContent = name;
+            productContainer.appendChild(nameElement);
+
+            const priceElement = document.createElement("p");
+            priceElement.textContent = `Price: $${price}`;
+            productContainer.appendChild(priceElement);
+
+            const servedElement = document.createElement("p");
+            servedElement.textContent = served;
+            productContainer.appendChild(servedElement);
+
+            const thumbnailElement = document.createElement("img");
+            thumbnailElement.src = thumbnail;
+            thumbnailElement.height = 300;
+            thumbnailElement.style.objectFit = "cover";
+            productContainer.appendChild(thumbnailElement);
+
+            const cartBtnElement = document.createElement("button");
+            cartBtnElement.innerText = "Add to Cart";
+            cartBtnElement.className = "btn";
+            cartBtnElement.className = "btn-secondary";
+            productContainer.appendChild(cartBtnElement);
+
+            rootContainer.appendChild(productContainer);
+          });
+        })
+        .catch((error) => console.error(error));
+    </script>
 
     <footer class="section footer-section">
       <div class="container">
