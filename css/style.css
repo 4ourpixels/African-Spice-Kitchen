@@ -192,7 +192,7 @@ textarea.form-control {
 }
 
 .site-hero.overlay:before {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.5);
   content: "";
   position: absolute;
   height: 100vh;
@@ -953,4 +953,15 @@ textarea.form-control {
   background: #fe820e;
   -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.banner-logo {
+  filter: invert();
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .banner-logo {
+    height: 6rem; /* Set the font size to 6rem for medium (md) and large (lg) screens */
+    width: auto;
+  }
 }
