@@ -2,61 +2,79 @@
   {
     "name": "Coconut Chicken Curry",
     "served": "Served with Basmati Rice",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/03Chicken-Coconut-Curry.png"
   },
   {
     "name": "Coconut Beef/Lamb Curry",
     "served": "Served with Basmati Rice",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/05Coconut Chicken Curryserved-with-BasmatiRice.png"
   },
   {
     "name": "Kenyan Beef Pilau Rice",
     "served": "Served with Kale, Chapati or plain",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/04Chicken-Pilau -Rice.png"
   },
   {
     "name": "Traditional Ugali and Kale",
     "served": "Served with Beef, Chicken or Lamb",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/"
   },
   {
     "name": "African Stir Fry",
     "served": "Served with Fried or Chicken",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/11Ugali-and-Kale-Served-with-Lamb-Chops.png"
   },
   {
     "name": "Coconut Lentil Curry",
     "served": "Served with Chapati or Rice",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/05Coconut-Chicken-Curryserved-with-BasmatiRice.png"
   },
   {
     "name": "Meal of Maize and Beans",
     "served": "Served with Chapati or Rice",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/07Meal-of-Maize-and-Beans-Served-with-Chapati.png"
   },
   {
     "name": "Traditional Ugali and Kale",
     "served": "Served with Sauteed Beans",
-    "price": "15"
+    "price": "15",
+    "thumbnail": "./img/products/12Ugali-Kale-and-Chicken.png"
   },
   {
     "name": "Fries",
-    "served": "Served with Basmati Rice"
+    "served": "Served with Samosa, chicken",
+    "price": "15",
+    "thumbnail": "./img/products/09Samosas.png"
   },
   {
-    "name": "Chips Masala",
-    "served": "Served with Basmati Rice"
+    "name": "Bhajia",
+    "served": "Served with Samosa, Chicken",
+    "price": "15",
+    "thumbnail": "./img/products/02Bhajias.png"
   },
   {
     "name": "Mandazi",
-    "served": "Served with Basmati Rice"
+    "served": "Plain",
+    "price": "15",
+    "thumbnail": "./img/products/06Mandazis.png"
   },
   {
     "name": "Samosas",
-    "served": "Served with Basmati Rice"
+    "served": "Served with Chicken, Fries or Bhajia",
+    "price": "15",
+    "thumbnail": "./img/products/09Samosas.png"
   },
   {
     "name": "Chicken Wings",
-    "served": "Served with Basmati Rice"
+    "served": "Served with Fries, Bhajia",
+    "price": "15",
+    "thumbnail": "./img/products/"
   }
 ]
