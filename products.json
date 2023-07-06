@@ -9,7 +9,7 @@
     "name": "Coconut Beef/Lamb Curry",
     "served": "Served with Basmati Rice",
     "price": "15",
-    "thumbnail": "./img/products/05Coconut Chicken Curryserved-with-BasmatiRice.png"
+    "thumbnail": "./img/products/05Coconut-Chicken-Curryserved-with-BasmatiRice.png"
   },
   {
     "name": "Kenyan Beef Pilau Rice",
@@ -21,7 +21,7 @@
     "name": "Traditional Ugali and Kale",
     "served": "Served with Beef, Chicken or Lamb",
     "price": "15",
-    "thumbnail": "./img/products/"
+    "thumbnail": "./img/products/05Coconut-Chicken-Curryserved-with-BasmatiRice.png"
   },
   {
     "name": "African Stir Fry",
@@ -71,10 +71,4 @@
     "price": "15",
     "thumbnail": "./img/products/09Samosas.png"
   },
-  {
-    "name": "Chicken Wings",
-    "served": "Served with Fries, Bhajia",
-    "price": "15",
-    "thumbnail": "./img/products/"
-  }
 ]
