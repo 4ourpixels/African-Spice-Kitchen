@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Coconut Chicken Curry",
+    "served": "Served with Basmati Rice",
+    "price": "15"
+  },
+  {
+    "name": "Coconut Beef/Lamb Curry",
+    "served": "Served with Basmati Rice",
+    "price": "15"
+  },
+  {
+    "name": "Kenyan Beef Pilau Rice",
+    "served": "Served with Kale, Chapati or plain",
+    "price": "15"
+  },
+  {
+    "name": "Traditional Ugali and Kale",
+    "served": "Served with Beef, Chicken or Lamb",
+    "price": "15"
+  },
+  {
+    "name": "African Stir Fry",
+    "served": "Served with Fried or Chicken",
+    "price": "15"
+  },
+  {
+    "name": "Coconut Lentil Curry",
+    "served": "Served with Chapati or Rice",
+    "price": "15"
+  },
+  {
+    "name": "Meal of Maize and Beans",
+    "served": "Served with Chapati or Rice",
+    "price": "15"
+  },
+  {
+    "name": "Traditional Ugali and Kale",
+    "served": "Served with Sauteed Beans",
+    "price": "15"
+  },
+  {
+    "name": "Fries",
+    "served": "Served with Basmati Rice"
+  },
+  {
+    "name": "Chips Masala",
+    "served": "Served with Basmati Rice"
+  },
+  {
+    "name": "Mandazi",
+    "served": "Served with Basmati Rice"
+  },
+  {
+    "name": "Samosas",
+    "served": "Served with Basmati Rice"
+  },
+  {
+    "name": "Chicken Wings",
+    "served": "Served with Basmati Rice"
+  }
+]
