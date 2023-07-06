@@ -958,9 +958,67 @@ textarea.form-control {
   object-fit: cover;
 }
 
+/* for xx-small screen */
+@media (min-width: 276px) {
+  .banner-logo {
+    height: 40px; /* Set the font size to 3rem for small screens (sm) and above */
+  }
+  .food-truck {
+    height: 190px;
+    width: auto;
+  }
+}
+/* for x-small screen */
+@media (min-width: 376px) {
+  .banner-logo {
+    height: 60px; /* Set the font size to 3rem for small screens (sm) and above */
+  }
+  .food-truck {
+    height: 270px;
+    width: auto;
+  }
+}
+/* for small screen */
+@media (min-width: 576px) {
+  .banner-logo {
+    height: 80px; /* Set the font size to 3rem for small screens (sm) and above */
+  }
+  .food-truck {
+    height: 350px;
+    width: auto;
+  }
+}
+/* for bigger screen */
+
 @media (min-width: 768px) {
   .banner-logo {
-    height: 6rem; /* Set the font size to 6rem for medium (md) and large (lg) screens */
+    height: 100px;
+  }
+  .food-truck {
+    height: 400px;
+    width: auto;
+  }
+}
+/* for xl screen */
+
+@media (min-width: 968px) {
+  .banner-logo {
+    height: 150px;
+  }
+  .food-truck {
+    height: 550px;
+    width: auto;
+  }
+}
+/* for xxl screen */
+
+@media (min-width: 1070px) {
+  .banner-logo {
+    height: 190px;
+    margin-left: -10rem;
+  }
+  .food-truck {
+    height: 720px;
     width: auto;
   }
 }
