@@ -121,7 +121,10 @@
       </div>
     </section>
     <div class="container">
-      <div id="root"></div>
+      <div
+        class="row row-cols-2 row-cols-md-4 row-cols-xl-4 justify-content-center"
+        id="root"
+      ></div>
     </div>
 
     <script>
@@ -137,6 +140,9 @@
 
             const productContainer = document.createElement("div");
             productContainer.classList.add("product");
+            productContainer.classList.add("col-sm-6");
+            productContainer.classList.add("col-md-4");
+            productContainer.classList.add("col-lg-3");
 
             const thumbnailElement = document.createElement("img");
             thumbnailElement.src = thumbnail;
